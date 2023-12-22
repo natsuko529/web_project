@@ -1,0 +1,28 @@
+.title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .button {
+    padding: 5px 10px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+
+  
