@@ -19,7 +19,6 @@ const RegistrationWindow = () => {
         setPasswordVisible(!passwordVisible);
     };
     const handleRegisration = () => {
-        console.log({ name, surname, date, weight, height, children, phone, email, gender, password });
         api_user.registration({ name, surname, date, weight, height, children, phone, email, gender, password })
             .then((response) => {
                 if (!response.ok) {

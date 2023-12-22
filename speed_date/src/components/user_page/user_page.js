@@ -9,7 +9,6 @@ const UserPage = () => {
     const [editMode, setEditMode] = useState(false);
 
     useEffect(() => {
-        console.log(cookieService.getAccessToken());
         apiRequest(api_user.getUser)
             .then(response => {
                 if (response.ok) {

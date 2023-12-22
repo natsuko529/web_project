@@ -28,14 +28,12 @@ const LoginWindow = () => {
     setPasswordInput(e.target.value);
   };
   const handleLogin = () => {
-    console.log(loginInput, passwordInput);
     api_user
       .login(loginInput, passwordInput)
       .then((Response)=>{
         return Response.json();
       })
       .then((data) => {
-        console.log(data);
         cookieService.setAccessToken(data.access);
         cookieService.setRefreshToken(data.refresh);
         cookieService.setRole(data.roles);
